@@ -1,3 +1,28 @@
-header {
-    
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align:center;
+
+}
+#topNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#copyright{
+    align-items: center;
+    text-align: center;
+    display: inline;
+}
+#socialMediaLinks {
+    display: inline;
+    text-align: right;
+    align-items: right;
+    align-content: right;
+    float: right;
+    clear: right;
 }
