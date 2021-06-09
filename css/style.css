@@ -1,3 +1,7 @@
+html {
+    background-color: black;
+    color: white;
+}
 footer{
     position: absolute;
     bottom: 0;
@@ -26,3 +30,12 @@ footer{
     float: right;
     clear: right;
 }
+
+/*Front Page Stylings*/
+#frontPage {
+
+}
+#hello {
+    align-content: center;
+}
+/*Contact Stylings*/
