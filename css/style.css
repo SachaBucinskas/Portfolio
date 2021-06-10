@@ -1,6 +1,6 @@
 html, body {
-    background-color: #24232A;
-    color: #F5F3F2;
+    background-color: #878FAC;
+    color: #48536E;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -17,7 +17,7 @@ hr{
 
 /*Navigation Bar*/
 header{
-    background-color: #111111;
+    background-color: #48536E;
 }
 .topNav {
     display: flex;
@@ -56,13 +56,14 @@ header{
 
 /*Footer & Resume/Media Links*/
 footer{
+    color: #EFEEED;
     position:fixed;
     bottom:0px;
     left:0;
     width:100%;
     height:60px;
     border-top:1px solid #ddd;
-    background-color: #111111;
+    background-color: #48536E;
 }
 
 #socialMediaLinks img {
@@ -108,7 +109,7 @@ footer{
 #hello {
     display: inline-block;
     text-align: left;
-    background: #5F6368;
+    background: #A34657;
     padding: 50px;
     color: #F5F3F2;
     border-color: #F5F3F2;
