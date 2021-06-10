@@ -184,8 +184,13 @@ footer{
     color: #A34657;
     text-decoration: none;
 }
-.blogs article #blog{
-    display: flex;
+.blogs article{ /*This primarily effects the dedicated blogpost pages & not the overview*/
+    text-align: left;
+}
+.blogs article img{
+    max-width: 80%;
+    height: 300px;
+    border: solid #A34657;
 }
 .blogs article .post{
     display: flex;
@@ -200,10 +205,14 @@ footer{
 .blogs #title{
     min-width: 20%;
 }
-.blogs article img{
+.blogs #overview{
+    display: flex;
+}
+.blogs #overview img{
     width: 200px;
     max-width: 300px;
-    max-height: 300px;
+    max-height: 200px;
+    border: solid #A34657;
 }
 .blogs #subinfo{
     font-size: small;
