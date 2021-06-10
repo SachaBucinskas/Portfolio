@@ -1,5 +1,5 @@
 html, body {
-    background-color: black;
+    background-color: #2D2244;
     color: white;
     margin: 0;
     padding: 0;
@@ -13,25 +13,32 @@ a{
 
 /*Footer & Resume/Media Links*/
 footer{
-    position:absolute;
-    bottom:0;
-    right:0;
+    position:fixed;
+    bottom:0px;
+    left:0;
     width:100%;
+    height:60px;
     border-top:1px solid #ddd;
-    background: black;
+    background-color: #6F698B;
 }
 
 #socialMediaLinks img {
     width: 32px;
     padding-top: 5px;
 }
+#copyright{
+    bottom:0;
+}
 
 /*Navigation Bar*/
-#topNav {
+header{
+    background-color: #6F698B;
+}
+.topNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 30px;
 }
 
 #mobileMenuButton { /*Hide the menu button on desktop*/
@@ -43,7 +50,7 @@ footer{
     left: 0;
 }
 #logo img{
-    max-height: 64px;
+    max-height: 40px;
 }
 #menuLinks{
     visibility: visible;
@@ -63,15 +70,44 @@ footer{
 }
 
 /*Front Page Stylings*/
-#frontPage {
+.frontPage {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
-#frontPage img {
+.frontPage img {
     max-width: 100%;
+}
+.frontPage article {
+    display: flex;
+    background: #F2F3F2;
+    border: solid black;
+    color: black;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    justify-content: space-between;
+    max-width: 80%;
+    align-items: center;
+}
+#aboutSkillset {
+    font-size: larger;
+    text-align: center;
+    width: 18%;
+}
+#mainText{
+    width: 80%;
+    text-align: left;
 }
 #hello {
     display: inline-block;
     text-align: left;
+    background: #6F698B;
+    padding: 50px;
+    color: white;
+    border-color: white;
 }
 /*Contact Stylings*/
 
@@ -86,20 +122,26 @@ footer{
         position: absolute;
         top: 0px;
         right: 0px;
-        background: white;
+        background: #6F698B;
         color: black;
-        font-size: xxx-large;
+        width: 50px;
+        font-size: xx-large;
     }
-    #topNav:hover #menuLinks{
+    .topNav:hover #menuLinks{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: red;
+        background-color: #6F698B;;
         width: 100%;
         visibility: visible;
         position: absolute;
-        top: 38px;
+        top: 22px;
+        right: 0px;
         transition: .3s;
         z-index: 100;
+        border: solid white;
     }
+}
+/*Phone Stylings Stylings*/
+@media only screen and (max-width:640px) {
 }
