@@ -31,6 +31,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
 }
 
 #mobileMenuButton { /*Hide the menu button on desktop*/
@@ -47,6 +48,19 @@ footer{
 #menuLinks{
     visibility: visible;
 } 
+#menuLinks ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#menuLinks li{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
 
 /*Front Page Stylings*/
 #frontPage {
@@ -63,13 +77,23 @@ footer{
 
 /*Tablet Stylings*/
 @media only screen and (max-width:900px) {
+    #menuLinks{
+        visibility: hidden;
+    }
     #mobileMenuButton {
+        display: inline-block;
         visibility: visible;
         position: absolute;
         top: 0px;
         right: 0px;
+        background: white;
+        color: black;
+        font-size: xxx-large;
     }
-    #mobileMenuButton button {
-        font-size: larger;
+    #mobileMenuButton:hover {
+        background: red;
+        #menuLinks{
+            visibility: visible;
+        }
     }
 }
