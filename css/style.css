@@ -138,6 +138,10 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
+.projects #projectTitle a{
+    color: #48536E;
+    text-decoration: none;
+}
 .projects #category{
     padding-right: 10px;
     color: #A34657;
