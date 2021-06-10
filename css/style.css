@@ -6,6 +6,12 @@ html, body {
     height: 100%;
     text-align: center;
 }
+
+a{
+    color:white;
+}
+
+/*Footer & Resume/Media Links*/
 footer{
     position:absolute;
     bottom:0;
@@ -15,19 +21,32 @@ footer{
     background: black;
 }
 
-a{
-    color:white;
+#socialMediaLinks img {
+    width: 32px;
+    padding-top: 5px;
 }
 
+/*Navigation Bar*/
 #topNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#socialMediaLinks img {
-    width: 32px;
+#mobileMenuButton { /*Hide the menu button on desktop*/
+    visibility: hidden;
 }
+#logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#logo img{
+    max-height: 64px;
+}
+#menuLinks{
+    visibility: visible;
+} 
 
 /*Front Page Stylings*/
 #frontPage {
@@ -41,3 +60,16 @@ a{
     text-align: left;
 }
 /*Contact Stylings*/
+
+/*Tablet Stylings*/
+@media only screen and (max-width:900px) {
+    #mobileMenuButton {
+        visibility: visible;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    #mobileMenuButton button {
+        font-size: larger;
+    }
+}
