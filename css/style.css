@@ -90,10 +90,16 @@ footer{
         color: black;
         font-size: xxx-large;
     }
-    #mobileMenuButton:hover {
+    #topNav:hover #menuLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background: red;
-        #menuLinks{
-            visibility: visible;
-        }
+        width: 100%;
+        visibility: visible;
+        position: absolute;
+        top: 38px;
+        transition: .3s;
+        z-index: 100;
     }
 }
