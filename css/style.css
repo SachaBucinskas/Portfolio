@@ -178,6 +178,7 @@ footer{
     border-radius: 25px;
     margin-bottom: 300px;
     width: 80%;
+    justify-content: center;
 }
 .blogs a{
     color: #A34657;
@@ -194,7 +195,7 @@ footer{
     text-decoration: none;
 }
 .blogs article .post p{
-    word-break: break-all;
+    text-overflow: ellipsis;
 }
 .blogs #title{
     min-width: 20%;
@@ -262,5 +263,15 @@ footer{
     }
     .frontPage article #aboutSkillset {
         padding-bottom: 10px;
+    }
+    /*Blogs*/
+    .blogs .post{
+        flex-direction: column;
+    }
+    .blogs #title{
+        padding-bottom: 0px;
+    }
+    .blogs #blog{
+        align-items: center;
     }
 }
