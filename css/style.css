@@ -90,7 +90,7 @@ footer{
 .frontPage article {
     display: flex;
     background: #F5F3F2;
-    border: solid black;
+    border: solid #A34657;
     color: #48536E;
     margin: 25px;
     padding: 25px;
@@ -129,16 +129,17 @@ footer{
         position: absolute;
         top: 0px;
         right: 0px;
-        background: #24232A;
-        color: black;
+        background: #A34657;
+        color: #F5F3F2;
         width: 50px;
+        height: 43px;
         font-size: xx-large;
     }
     .topNav:hover #menuLinks{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #5093A2;
+        background-color: #A34657;
         width: 100%;
         visibility: visible;
         position: absolute;
