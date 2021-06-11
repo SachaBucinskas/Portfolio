@@ -100,11 +100,11 @@ footer{
     max-width: 80%;
     align-items: center;
 }
-.frontPage #aboutSkillset {
+.frontPage .aboutSkillset {
     text-align: center;
     width: 18%;
 }
-.frontPage #mainText{
+.frontPage .mainText{
     width: 80%;
     text-align: left;
 }
@@ -141,6 +141,7 @@ footer{
 .projects #projectTitle a{
     color: #48536E;
     text-decoration: none;
+    word-break: keep-all;
 }
 .projects #category{
     padding-right: 10px;
@@ -154,6 +155,7 @@ footer{
     display: flex;
     flex-direction: row;
     margin: 5px;
+    word-break: keep-all;
 }
 .projects article img{
     align-self: baseline;
@@ -207,7 +209,9 @@ footer{
     text-overflow: ellipsis;
 }
 .blogs #title{
+    word-break: keep-all;
     min-width: 20%;
+    padding: 15px;
 }
 .blogs #overview{
     display: flex;
@@ -317,7 +321,7 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    .frontPage article #aboutSkillset {
+    .frontPage article .aboutSkillset {
         padding-bottom: 10px;
     }
     /*Blogs*/
